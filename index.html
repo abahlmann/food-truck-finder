@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FoodTruckFinder.</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>FoodTruckFinder.</h1>
+      <h4>
+        <i class="fa fa-truck" aria-hidden="true"></i>
+        Go mobile with food
+      </h4>
+    </header>
+    <div id="search-screen" class="container screen">
+      <h2>Pick a Spot!</h2>
+      <br />
+
+      <div class="flex-box">
+        <div class="card" id="location-card">
+          <div id="back-bay-boston">
+            <figure>
+              <img src="Images/backbay.jpg" class="card-img-top" alt="..." />
+            </figure>
+            <h3 class="card-title" id="location-name">Back Bay</h3>
+          </div>
+        </div>
+
+        <div class="card" id="location-card">
+          <div id="aquarium-boston">
+            <figure>
+              <img src="Images/aquarium.jpg" class="card-img-top" alt="..." />
+            </figure>
+            <h3 class="card-title" id="location-name">Aquarium</h3>
+          </div>
+        </div>
+
+        <div class="card" id="location-card">
+          <div id="kenmore-boston">
+            <figure>
+              <img src="Images/kenmore.jpg" class="card-img-top" alt="..." />
+            </figure>
+            <h3 class="card-title" id="location-name">Kenmore</h3>
+          </div>
+        </div>
+
+        <!-- <br>
+      <br> -->
+        <div class="card" id="location-card">
+          <div id="east-boston">
+            <figure>
+              <img src="Images/eastboston.jpg" class="card-img-top" alt="..." />
+            </figure>
+            <h3 class="card-title" id="location-name">East Boston</h3>
+          </div>
+        </div>
+
+        <div class="card" id="location-card">
+          <div id="south-station-boston">
+            <figure>
+              <img
+                src="Images/southstation.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </figure>
+            <h3 class="card-title" id="location-name">South Station</h3>
+          </div>
+        </div>
+
+        <div class="card" id="location-card">
+          <div id="copley-boston">
+            <figure>
+              <img src="Images/copley.png" class="card-img-top" alt="..." />
+            </figure>
+            <h3 class="card-title" id="location-name">Copley</h3>
+          </div>
+        </div>
+
+        <div class="card" id="location-card">
+          <div id="northeastern-boston">
+            <figure>
+              <img
+                src="Images/northeastern.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </figure>
+            <h3 class="card-title" id="location-name">Northeastern</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of the search-screen-->
+
+    <br />
+    <br />
+    <div class="container-fluid screen" id="display-screen">
+      <div class="row">
+        <div class="col-md-8">
+        <h2 id="display-header">Inserted based on button</h2>
+      </div>
+      <div class="col-md-4">
+        <img src="Images/back-button.png" class="button" id="back-button" width="57.8rem">
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h3>FOOD TRUCKS</h3>
+          <div id="food-trucks">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h3>WEATHER</h3>
+          <div id="weather">
+          </div>
+        </div>
+      </div>
+      <!--end row-->
+    </div>
+    <!--end display-screen-->
+
+    <div class="icons">
+      <strong>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy"
+          >Dave Gandy</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        is licensed by
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+      </strong>
+      <div>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+          >Smashicons</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        is licensed by
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+      </div>
+    </div>
+    <!--end icons-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>
